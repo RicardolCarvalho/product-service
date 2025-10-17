@@ -12,6 +12,8 @@ pipeline {
         }
         stage('Build') { 
             steps {
+                sh 'pwd'
+                sh 'ls -la'
                 sh 'mvn -B -DskipTests clean package'
             }
         }      
